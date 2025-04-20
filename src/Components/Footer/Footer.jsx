@@ -18,12 +18,12 @@ const Footer = () => {
     <ul className="menu menu-horizontal px-1">
           {footItems.map((item) => (
             <li key={item.id}>
-              <Link to={item.link}>{item.name}</Link>
+              <Link to={item.link} className='hover:underline'>{item.name}</Link>
             </li>
           ))}
     </ul>
   </nav>
-  <nav>
+  <nav className='border-t-2 border-[#0F0F0F40] px-20 pt-3'>
     <div className="grid grid-flow-col gap-4">
     <a
     href="https://www.twitter.com"
