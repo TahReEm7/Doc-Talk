@@ -10,7 +10,7 @@ const Nav = () => {
   ];
     return (
         <div>
-           <div className="navbar bg-base-300 px-20 py-5">
+           <div className="navbar bg-base-300 md:px-20 py-5">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -19,9 +19,12 @@ const Nav = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-       {
-        
-       }
+        {navItems.map((item) => (
+            <li key={item.id}>
+              <Link to={item.link} className="hover:underline"
+               >{item.name}</Link>
+            </li>
+          ))}
       </ul>
     </div>
     <a className="btn btn-ghost text-xl"><img className='w-1/4' src="https://i.ibb.co.com/QFLHSKGj/logo.png" alt="Logo" />Phudu</a>

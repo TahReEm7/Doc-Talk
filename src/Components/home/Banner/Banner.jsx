@@ -9,9 +9,9 @@ const Banner = () => {
                 <input type="text" placeholder="Search any doctor..." className="input input-bordered rounded-4xl w-full max-w-xs my-5" />
                 <a className="btn rounded-4xl text-white bg-[#176AE5] px-6 py-4">Search Now</a>
             </form>
-            <div className='flex gap-3 justify-center items-center'>
+            <div className='hidden md:flex gap-3 justify-center items-center'>
                 <img className='h-90 md:max-w-full' src="https://i.ibb.co.com/TxWKPGZL/banner-img-1.png" alt="image" />
-                <img className='h-90 md:max-w-full' src="https://i.ibb.co.com/Xkjfq992/doctor-sample.png" alt="image" />
+                <img className='h-90 md:max-w-full hidden lg:flex' src="https://i.ibb.co.com/Xkjfq992/doctor-sample.png" alt="image" />
             </div>
         </div>
     );
