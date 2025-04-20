@@ -9,7 +9,7 @@ const Footer = () => {
       ];
     return (
         <div>
-            <footer className="flex flex-col items-center justify-between p-10 bg-base-200">
+            <footer className="flex flex-col items-center justify-between p-10 bg-white">
   <aside className='flex gap-3.5'>
     <img src="https://i.ibb.co.com/QFLHSKGj/logo.png" alt="Logo" />
     <h1 className='font-bold text-4xl'>Phedu</h1>

@@ -10,7 +10,7 @@ const Nav = () => {
   ];
     return (
         <div>
-           <div className="navbar bg-base-100 shadow-sm">
+           <div className="navbar bg-base-200 px-20 py-5">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -30,13 +30,14 @@ const Nav = () => {
     <ul className="menu menu-horizontal px-1">
           {navItems.map((item) => (
             <li key={item.id}>
-              <Link to={item.link} className="hover:underline">{item.name}</Link>
+              <Link to={item.link} className="hover:underline"
+               >{item.name}</Link>
             </li>
           ))}
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn rounded-4xl btn-primary px-6 py-4">Emergency</a>
+    <a className="btn rounded-4xl text-white bg-[#176AE5] px-6 py-4">Emergency</a>
   </div>
 </div> 
         </div>
