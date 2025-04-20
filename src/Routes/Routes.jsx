@@ -3,8 +3,10 @@ import {
     createBrowserRouter,
   } from "react-router";
 import HomePage from '../Pages/Home/HomePage';
-import Home from '../Components/home/Home';
+import Home from '../Components/home/Home/Home';
 import Blogs from '../Pages/Home/Blogs/Blogs';
+import Contact from '../Pages/Home/Contacts/Contact';
+import Booking from '../Pages/Home/My-Bookings/Booking';
 
  export const router = createBrowserRouter([
     {
@@ -18,7 +20,7 @@ import Blogs from '../Pages/Home/Blogs/Blogs';
          },
          {
             path: "/My-Bookings",
-            element:<div>My Bookings</div>,
+            Component: Booking,
          },
          {
             path: "/blog",
@@ -26,7 +28,7 @@ import Blogs from '../Pages/Home/Blogs/Blogs';
          },
          {
             path:  "/contact" ,
-            element:<div> contact </div>,
+            Component : Contact,
          }
     ]
     }
