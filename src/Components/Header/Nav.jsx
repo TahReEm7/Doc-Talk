@@ -1,12 +1,13 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import { NavLink, Link } from 'react-router';
 
 const Nav = () => {
-  const navItems = [
+ const navItems = [
     { id: 1, name: "Home", link: "/" },
-    { id: 3, name: "Services", link: "/My-Bookings" },
-    { id: 5, name: "Blog", link: "/blog" },
-    { id: 4, name: "Contact", link: "/contact" }];
+    { id: 2, name: "My-Bookings", link: "/My-Bookings" },
+    { id: 3, name: "Blog", link: "/blog" },
+    { id: 4, name: "Contact", link: "/contact" }
+  ];
     return (
         <div>
            <div className="navbar bg-base-100 shadow-sm">
@@ -27,19 +28,11 @@ const Nav = () => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-   <div className='flex gap-4'>
-   {navItems.map((item) => (
-        <NavLink
-          key={item.name}
-          to={item.path}
-          className={({ isActive }) =>
-            isActive ? 'text-black ' : 'text-gray-800'
-          }
-        >
-          {item.name}
-        </NavLink>
-      ))}
-   </div>
+          {navItems.map((item) => (
+            <li key={item.id}>
+              <Link to={item.link} className="hover:underline">{item.name}</Link>
+            </li>
+          ))}
     </ul>
   </div>
   <div className="navbar-end">

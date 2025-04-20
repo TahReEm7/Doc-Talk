@@ -14,7 +14,18 @@ import Home from '../Components/home/Home';
         {   index: true,
             path: "/",
             Component:Home,
-
+         },
+         {
+            path: "/My-Bookings",
+            element:<div>My Bookings</div>,
+         },
+         {
+            path: "/blog",
+            element:<div>blog</div>,
+         },
+         {
+            path:  "/contact" ,
+            element:<div> contact </div>,
          }
     ]
     }
