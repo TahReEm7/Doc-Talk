@@ -12,7 +12,7 @@ import Booking from '../Pages/Home/My-Bookings/Booking';
     {
       path: "/",
       Component: HomePage,
-      errorElement: <div>error</div>,
+      errorElement: <Contact/>,
       children: [
         {   index: true,
             path: "/",
