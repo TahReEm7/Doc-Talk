@@ -7,6 +7,7 @@ import Home from '../Components/home/Home/Home';
 import Blogs from '../Pages/Home/Blogs/Blogs';
 import Contact from '../Pages/Home/Contacts/Contact';
 import Booking from '../Pages/Home/My-Bookings/Booking';
+import DocDetails from '../Pages/DocDetails/DocDetails';
 
  export const router = createBrowserRouter([
     {
@@ -29,7 +30,13 @@ import Booking from '../Pages/Home/My-Bookings/Booking';
          {
             path:  "/contact" ,
             Component : Contact,
-         }
+         },
+         {
+            path:  "/details/:id" ,
+            loader: () => fetch(`/doctorsData.json`),
+            Component : DocDetails,
+         },
+
     ]
     }
   ]);

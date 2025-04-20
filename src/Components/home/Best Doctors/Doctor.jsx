@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Doctor = ({doctor}) => {
-    const { name, education, speciality, experience, registrationNumber,image } = doctor;
+    const { id ,name, education, speciality, experience, registrationNumber,image } = doctor;
     return (
         <div>
             <div className="card bg-base-100 w-96 shadow-sm">
@@ -21,7 +22,7 @@ const Doctor = ({doctor}) => {
             <p className='border-b-2  border-dashed border-s-teal-50 w-full py-2'>{education} - {speciality}</p>
             <p>Reg : {registrationNumber}</p>
             
-            <button className="btn btn-wide">View Details</button>
+            <Link to={`/details/${id}`} className="w-full"><button className="btn btn-wide">View Details</button></Link>
         
           </div>
         </div>
