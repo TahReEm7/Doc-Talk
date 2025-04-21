@@ -5,8 +5,8 @@ const Doctor = ({doctor}) => {
     const { id ,name, education, speciality, experience, registrationNumber,image } = doctor;
     return (
         <div>
-            <div className="card bg-base-100 w-96 shadow-sm">
-    <figure className="px-10 pt-10">
+            <div className="card bg-base-100 shadow-sm">
+    <figure className="md:px-10 pt-5 md:pt-10">
     <img
       src={image}
       alt="Doctor"

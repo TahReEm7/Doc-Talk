@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useLoaderData, useParams } from 'react-router-dom'; // use react-router-dom
+import { useLoaderData, useParams } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import { addToStoredDB } from '../../Components/Utilities/appointment';
 import { MdErrorOutline } from "react-icons/md";
@@ -35,11 +35,11 @@ const handleClick = () => {
     <div className='bg-base-300'>
       <div className='w-10/12 mx-auto py-10 text-center bg-white rounded-2xl shadow-2xl'>
         <h1 className='text-2xl font-bold'>Doctor’s Profile Details</h1>
-        <p className='px-20'>{description}</p>
+        <p className='px-2 md:px-20'>{description}</p>
       </div>
 
       <div>
-        <div className="w-10/12 mx-auto bg-base-100 shadow-xl mt-10 mb-10">
+        <div className="w-10/12 mx-auto bg-base-100 shadow-xl my-10">
           {/* Optional: Additional content */}
         </div>
 
@@ -48,7 +48,7 @@ const handleClick = () => {
             <h1 className='text-2xl font-bold border-b-4 p-5 border-dashed border-base-200'>Book an Appointment</h1>
           </div>
 
-          <div className='flex justify-between items-center w-11/12 mx-auto border-b-4 p-5 border-dashed border-base-200'>
+          <div className='flex justify-between items-center w-11/12 mx-auto border-b-4 md:p-5 p-2 border-dashed border-base-200'>
             <p className='font-semibold'>Availability</p>
             <div className={`badge ${isBooked ? 'badge-error' : 'badge-success'}`}>
               {isBooked ? 'Appointment Booked' : 'Doctor Available Today'}
@@ -57,7 +57,7 @@ const handleClick = () => {
 
           <div className='w-11/12 mx-auto mt-5'>
           <ToastContainer />
-          <p className='badge badge-soft badge-warning mb-4'><MdErrorOutline /> Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</p>
+          <p className='badge badge-soft badge-warning mb-4 overflow-ellipsis'><MdErrorOutline /> Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</p>
           <button
   onClick={handleClick}
   className={`btn rounded-4xl text-white px-6 py-4 btn-block ${

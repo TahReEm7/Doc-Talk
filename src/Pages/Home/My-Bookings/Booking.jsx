@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import { getStoredBook, removeFromStoredDB } from '../../../Components/Utilities/appointment';
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, LabelList } from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, LabelList, ResponsiveContainer } from 'recharts';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Booking = () => {
   const [readList, setReadList] = useState([]);
@@ -23,16 +25,22 @@ const Booking = () => {
 
   const handleCancel = (id) => {
     const updatedList = readList.filter(doc => doc.id !== id);
+    const doctor = readList.find(doc => doc.id === id);
     setReadList(updatedList);
     removeFromStoredDB(id);
+    toast.info(`Cancelled appointment with Dr. ${doctor?.name}`, {
+      position: 'top-right',
+      autoClose: 3000,
+    });
   };
 
   return (
     <>
+      <ToastContainer />
       {readList.length === 0 ? (
         <div className="flex flex-col items-center justify-center min-h-screen text-center px-4">
           <img
-            src="https://i.ibb.co/com/kVSWyfFV/book-doctor-appointment-card-template-schedule-hospital-visit-editable-social-media-post-design-flat.jpg"
+            src="https://i.ibb.co.com/kVSWyfFV/book-doctor-appointment-card-template-schedule-hospital-visit-editable-social-media-post-design-flat.jpg"
             alt="No appointment"
             className="w-28 mb-4"
           />
@@ -51,34 +59,28 @@ const Booking = () => {
 
           {/* Chart Section */}
           <div className="w-full md:w-3/4 mx-auto mb-10">
-            <BarChart
-              width={1000}
-              height={300}
-              data={chartData}
-              margin={{
-                top: 20,
-                right: 30,
-                left: 20,
-                bottom: 5,
-              }}
-            >
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="name" />
-              <YAxis />
-              <Bar dataKey="fee" fill="#8884d8">
-                {chartData.map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />
-                ))}
-                {/* Add LabelList to show fee on top of the bars */}
-                <LabelList 
-                  dataKey="fee" 
-                  position="top" 
-                  fill="#00000069"  
-                  fontSize={18}
-                  fontWeight="semibold"  
-                />
-              </Bar>
-            </BarChart>
+            <ResponsiveContainer width="100%" height={300}>
+              <BarChart
+                data={chartData}
+                margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
+              >
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="name" />
+                <YAxis />
+                <Bar dataKey="fee" fill="#8884d8">
+                  {chartData.map((entry, index) => (
+                    <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />
+                  ))}
+                  <LabelList
+                    dataKey="fee"
+                    position="top"
+                    fill="#00000069"
+                    fontSize={18}
+                    fontWeight="semibold"
+                  />
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
           </div>
 
           {/* Booked Appointments List */}

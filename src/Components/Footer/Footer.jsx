@@ -23,7 +23,7 @@ const Footer = () => {
           ))}
     </ul>
   </nav>
-  <nav className='border-t-2 border-[#0F0F0F40] px-20 pt-3'>
+  <nav className='border-t-2 border-[#0F0F0F40] md:px-20 pt-3'>
     <div className="grid grid-flow-col gap-4">
     <a
     href="https://www.twitter.com"
