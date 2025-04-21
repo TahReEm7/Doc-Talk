@@ -8,7 +8,8 @@
     "registrationNumber": "12345",
     "image": "https://i.ibb.co.com/Xf2Pq8bx/doc1.png",
     "description": "Dr. John Doe is an experienced cardiologist specializing in heart disease diagnostics, treatment, and surgeries. He has over 10 years of expertise in managing complex cardiovascular conditions.",
-    "availability": "Monday to Friday, 9 AM - 6 PM"
+    "availability": "Monday to Friday, 9 AM - 6 PM",
+    "fee": 500
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
     "registrationNumber": "12346",
     "image": "https://i.ibb.co.com/Xkjfq992/doctor-sample.png",
     "description": "Dr. Jane Smith is a neurologist with extensive experience in treating neurological disorders like epilepsy, migraines, and Parkinson's disease.",
-    "availability": "Tuesday to Thursday, 10 AM - 4 PM"
+    "availability": "Tuesday to Thursday, 10 AM - 4 PM",
+    "fee": 450
   },
   {
     "id": 3,
@@ -30,7 +32,8 @@
     "registrationNumber": "12347",
     "image": "https://i.ibb.co.com/F4Zdm8Jm/doc2.png",
     "description": "Dr. Alice Brown is an orthopedic specialist focused on bone and joint health. She has expertise in treating fractures, arthritis, and sports injuries.",
-    "availability": "Monday to Friday, 8 AM - 5 PM"
+    "availability": "Monday to Friday, 8 AM - 5 PM",
+    "fee": 400
   },
   {
     "id": 4,
@@ -41,7 +44,8 @@
     "registrationNumber": "12348",
     "image": "https://i.ibb.co.com/F4wbcjrX/doc3.jpg",
     "description": "Dr. Bob Johnson is a general surgeon with 12 years of experience in performing a wide range of surgeries, from minor procedures to complex surgeries.",
-    "availability": "Monday to Friday, 9 AM - 6 PM"
+    "availability": "Monday to Friday, 9 AM - 6 PM",
+    "fee": 550
   },
   {
     "id": 5,
@@ -52,7 +56,8 @@
     "registrationNumber": "12349",
     "image": "https://i.ibb.co.com/Wj7ZnwN/doc5.jpg",
     "description": "Dr. Sarah Lee is a pediatrician specializing in child health, from newborn care to adolescence. She is skilled in managing pediatric diseases and vaccinations.",
-    "availability": "Monday to Thursday, 10 AM - 4 PM"
+    "availability": "Monday to Thursday, 10 AM - 4 PM",
+    "fee": 420
   },
   {
     "id": 6,
@@ -63,7 +68,8 @@
     "registrationNumber": "12350",
     "image": "https://i.ibb.co.com/M5C46qMZ/doc4.jpg",
     "description": "Dr. Michael Davis specializes in skin conditions, including acne, eczema, and psoriasis. He also offers treatments for aging and skin care.",
-    "availability": "Tuesday to Friday, 9 AM - 5 PM"
+    "availability": "Tuesday to Friday, 9 AM - 5 PM",
+    "fee": 390
   },
   {
     "id": 7,
@@ -74,7 +80,8 @@
     "registrationNumber": "12351",
     "image": "https://i.ibb.co.com/F4Zdm8Jm/doc2.png",
     "description": "Dr. Emily Wilson is a gastroenterologist specializing in digestive system disorders, including IBS, GERD, and liver diseases.",
-    "availability": "Monday to Friday, 9 AM - 6 PM"
+    "availability": "Monday to Friday, 9 AM - 6 PM",
+    "fee": 480
   },
   {
     "id": 8,
@@ -85,7 +92,8 @@
     "registrationNumber": "12352",
     "image": "https://i.ibb.co.com/M5C46qMZ/doc4.jpg",
     "description": "Dr. William Clark is a psychiatrist with expertise in mental health care, treating conditions like depression, anxiety, and schizophrenia.",
-    "availability": "Monday to Thursday, 9 AM - 4 PM"
+    "availability": "Monday to Thursday, 9 AM - 4 PM",
+    "fee": 530
   },
   {
     "id": 9,
@@ -96,7 +104,8 @@
     "registrationNumber": "12353",
     "image": "https://i.ibb.co.com/F4wbcjrX/doc3.jpg",
     "description": "Dr. Olivia Harris specializes in diagnostic radiology, using imaging techniques like CT scans and MRIs to diagnose diseases.",
-    "availability": "Monday to Wednesday, 8 AM - 4 PM"
+    "availability": "Monday to Wednesday, 8 AM - 4 PM",
+    "fee": 370
   },
   {
     "id": 10,
@@ -107,7 +116,8 @@
     "registrationNumber": "12354",
     "image": "https://i.ibb.co.com/Xf2Pq8bx/doc1.png",
     "description": "Dr. David Martinez specializes in endocrine disorders such as diabetes, thyroid conditions, and hormone imbalances.",
-    "availability": "Monday to Friday, 9 AM - 5 PM"
+    "availability": "Monday to Friday, 9 AM - 5 PM",
+    "fee": 510
   },
   {
     "id": 11,
@@ -118,7 +128,8 @@
     "registrationNumber": "12355",
     "image": "https://i.ibb.co.com/Wj7ZnwN/doc5.jpg",
     "description": "Dr. Isabella Taylor is an anesthesiologist who provides anesthesia services for a wide range of surgeries, ensuring patient safety and comfort during procedures.",
-    "availability": "Tuesday to Friday, 10 AM - 4 PM"
+    "availability": "Tuesday to Friday, 10 AM - 4 PM",
+    "fee": 460
   },
   {
     "id": 12,
@@ -129,7 +140,8 @@
     "registrationNumber": "12356",
     "image": "https://i.ibb.co.com/Xf2Pq8bx/doc1.png",
     "description": "Dr. Daniel Scott is an ophthalmologist specializing in eye health, including cataract surgery, glaucoma treatment, and LASIK procedures.",
-    "availability": "Monday to Friday, 9 AM - 5 PM"
+    "availability": "Monday to Friday, 9 AM - 5 PM",
+    "fee": 495
   },
   {
     "id": 13,
@@ -140,6 +152,7 @@
     "registrationNumber": "12357",
     "image": "https://i.ibb.co.com/Xkjfq992/doctor-sample.png",
     "description": "Dr. Sophie Martinez is a pulmonologist specializing in respiratory diseases like asthma, COPD, and pneumonia. She focuses on both diagnosis and long-term care.",
-    "availability": "Monday to Friday, 9 AM - 5 PM"
+    "availability": "Monday to Friday, 9 AM - 5 PM",
+    "fee": 475
   }
 ]

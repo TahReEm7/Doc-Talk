@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom'; // use react-router-dom
 import { toast, ToastContainer } from 'react-toastify';
 import { addToStoredDB } from '../../Components/Utilities/appointment';
+import { MdErrorOutline } from "react-icons/md";
 
 const DocDetails = () => {
   const [isBooked, setIsBooked] = useState(false);
@@ -56,6 +57,7 @@ const handleClick = () => {
 
           <div className='w-11/12 mx-auto mt-5'>
           <ToastContainer />
+          <p className='badge badge-soft badge-warning mb-4'><MdErrorOutline /> Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</p>
           <button
   onClick={handleClick}
   className={`btn rounded-4xl text-white px-6 py-4 btn-block ${
