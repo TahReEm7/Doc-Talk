@@ -1,17 +1,25 @@
 import React from 'react';
+import { Outlet, useNavigation } from 'react-router-dom';
 import Nav from '../../Components/Header/Nav';
-import { Outlet } from 'react-router';
 import Footer from '../../Components/Footer/Footer';
-
+import GlobalLoader from '../../Components/GlobalLoader/GlobalLoader';
 
 const HomePage = () => {
-    return (
+  const navigation = useNavigation();
+
+  return (
+    <>
+       <Nav />
+      {navigation.state === 'loading' ? (
+        <GlobalLoader />
+      ) : (
         <>
-            <Nav/>
-            <Outlet/>
-            <Footer/>
+          <Outlet />
+          <Footer />
         </>
-    );
+      )}
+    </>
+  );
 };
 
 export default HomePage;

@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 const Contact = () => {
   return (
+    
     <div className="flex flex-col items-center justify-center min-h-screen bg-base-200 shadow-2xl p-6 text-center">
       <h1 className="text-8xl font-extrabold text-blue-700">404</h1>
       <p className="text-2xl mt-4 font-semibold text-blue-800">Page not found!</p>

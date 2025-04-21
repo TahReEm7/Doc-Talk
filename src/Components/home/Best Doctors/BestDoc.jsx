@@ -32,8 +32,8 @@ const BestDoc = () => {
 
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-11/12 mx-auto mt-6'>
         {loading ? (
-          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '100px' }}>
-            <PacmanLoader color="#3681d7" size={25} />
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', justifyItems:'center', marginTop: '100px' }}>
+            <PacmanLoader className='text-center w-full m-20 mx-auto' color="#3681d7" size={25} />
           </div>
         ) : (
           doctorsToShow.map((doctor) => <Doctor key={doctor.id} doctor={doctor} />)

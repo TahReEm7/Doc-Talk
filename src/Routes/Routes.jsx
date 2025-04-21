@@ -8,6 +8,7 @@ import Blogs from '../Pages/Home/Blogs/Blogs';
 import Contact from '../Pages/Home/Contacts/Contact';
 import Booking from '../Pages/Home/My-Bookings/Booking';
 import DocDetails from '../Pages/DocDetails/DocDetails';
+import ErrorPage from '../Pages/ErrorPage/ErrorPage';
 
  export const router = createBrowserRouter([
     {
@@ -37,6 +38,10 @@ import DocDetails from '../Pages/DocDetails/DocDetails';
             loader: () => fetch(`/doctorsData.json`),
             Component : DocDetails,
          },
+         {
+            path: "/error",
+            Component: ErrorPage,
+         }
 
     ]
     }

@@ -48,9 +48,9 @@ const Booking = () => {
           <p className="text-gray-600 mb-6">Looks like you're missing out on great health support!</p>
           <Link
             to="/"
-            className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300"
+            className="px-6 py-3 rounded-4xl text-white bg-[#176AE5] hover:bg-blue-700 transition duration-300"
           >
-            Book Now
+            Book an Appointment
           </Link>
         </div>
       ) : (
