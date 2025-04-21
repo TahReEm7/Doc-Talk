@@ -22,7 +22,7 @@ const Doctor = ({doctor}) => {
             <p className='border-b-2  border-dashed border-s-teal-50 w-full py-2'>{education} - {speciality}</p>
             <p>Reg : {registrationNumber}</p>
             
-            <Link to={`/details/${id}`} className="w-full"><button className="btn btn-wide">View Details</button></Link>
+            <Link to={`/details/${id}`} className="w-full"><button className="btn btn-wide rounded-4xl text-white bg-[#176AE5]">View Details</button></Link>
         
           </div>
         </div>

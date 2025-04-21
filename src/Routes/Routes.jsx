@@ -21,6 +21,7 @@ import DocDetails from '../Pages/DocDetails/DocDetails';
          },
          {
             path: "/My-Bookings",
+            loader: () => fetch(`/doctorsData.json`),
             Component: Booking,
          },
          {

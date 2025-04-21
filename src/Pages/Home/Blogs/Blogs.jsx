@@ -21,6 +21,7 @@ const Blogs = () => {
 
   return (
     <div>
+      <h1 className='text-center text-4xl font-bold p-5'>Blogs</h1>
       {loading ? (
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '100px' }}>
           <PacmanLoader color="#3681d7" size={25} />
