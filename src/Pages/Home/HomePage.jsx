@@ -4,6 +4,7 @@ import  { useEffect, useState } from 'react';
 import Nav from '../../Components/Header/Nav';
 import Footer from '../../Components/Footer/Footer';
 import GlobalLoader from '../../Components/GlobalLoader/GlobalLoader';
+import ScrollToTop from '../../Components/SmoothScroll/ScrollToTop ';
 
 const HomePage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -17,11 +18,13 @@ const HomePage = () => {
   }, []);
   return (
     <>
+        <ScrollToTop />
             <Nav />
 
             {isLoading ? (
                 <GlobalLoader />
             ) : (
+              
                 <Outlet />
             )}
 

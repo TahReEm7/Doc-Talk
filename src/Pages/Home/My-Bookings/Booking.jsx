@@ -88,9 +88,10 @@ const Booking = () => {
             {readList.map((doc) => (
               <div key={doc.id} className="bg-white rounded-xl shadow-lg p-6">
                 <h3 className="text-xl font-semibold mb-2">{doc.name}</h3>
-                <p><strong>Speciality:</strong> {doc.speciality}</p>
-                <p><strong>Date:</strong> {doc.date ? new Date(doc.date).toLocaleDateString() : 'No date set'}</p>
-                <p><strong>Fee:</strong> ${doc.fee}</p>
+                <div className='flex justify-between text-gray-500 border-b-2 mb-4 pb-2 border-dashed'> 
+                <p>{doc.education} ,{doc.speciality}  ,{doc.location}</p>
+                <p>Appointment Fee : {doc.fee} Taka (incl. VAT)</p>
+                </div>
                 <button
                   onClick={() => handleCancel(doc.id)}
                   className="btn btn-block btn-outline btn-error rounded-2xl"
