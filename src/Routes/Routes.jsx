@@ -14,7 +14,7 @@ import ErrorPage from '../Pages/ErrorPage/ErrorPage';
     {
       path: "/",
       Component: HomePage,
-      errorElement: <Contact/>,
+      errorElement: <Contact />,
       children: [
         {   index: true,
             path: "/",
@@ -38,11 +38,7 @@ import ErrorPage from '../Pages/ErrorPage/ErrorPage';
             loader: () => fetch(`/doctorsData.json`),
             Component : DocDetails,
          },
-         {
-            path: "/error",
-            Component: ErrorPage,
-         }
-
+        
     ]
     }
   ]);

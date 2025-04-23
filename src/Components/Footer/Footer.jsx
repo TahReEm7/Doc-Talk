@@ -7,6 +7,9 @@ const Footer = () => {
         { id: 3, name: "Blog", link: "/blog" },
         { id: 4, name: "Contact", link: "/contact" }
       ];
+
+      const getActiveClass = ({ isActive }) =>
+        isActive ? "underline text-blue-600 font-semibold" : "hover:underline";
     return (
         <div>
             <footer className="flex flex-col items-center justify-between p-10 bg-white">
@@ -16,11 +19,13 @@ const Footer = () => {
   </aside>
   <nav>
     <ul className="menu menu-horizontal px-1">
-          {footItems.map((item) => (
-            <li key={item.id}>
-              <Link to={item.link} className='hover:underline'>{item.name}</Link>
-            </li>
-          ))}
+           {footItems.map((item) => (
+                          <li key={item.id}>
+                            <NavLink to={item.link} className={getActiveClass}>
+                              {item.name}
+                            </NavLink>
+                          </li>
+                        ))}
     </ul>
   </nav>
   <nav className='border-t-2 border-[#0F0F0F40] md:px-20 pt-3'>

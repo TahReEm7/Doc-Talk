@@ -1,25 +1,32 @@
 import React from 'react';
-import { Outlet, useNavigation } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+import  { useEffect, useState } from 'react';
 import Nav from '../../Components/Header/Nav';
 import Footer from '../../Components/Footer/Footer';
 import GlobalLoader from '../../Components/GlobalLoader/GlobalLoader';
 
 const HomePage = () => {
-  const navigation = useNavigation();
+  const [isLoading, setIsLoading] = useState(true);
 
+  useEffect(() => {
+      const timer = setTimeout(() => {
+          setIsLoading(false);
+      }, 200);
+
+      return () => clearTimeout(timer);
+  }, []);
   return (
     <>
-       <Nav />
-      {navigation.state === 'loading' ? (
-        <GlobalLoader />
-      ) : (
-        <>
-          <Outlet />
-          <Footer />
-        </>
-      )}
-    </>
-  );
-};
+            <Nav />
 
+            {isLoading ? (
+                <GlobalLoader />
+            ) : (
+                <Outlet />
+            )}
+
+        <Footer />
+    </>
+);
+};
 export default HomePage;
