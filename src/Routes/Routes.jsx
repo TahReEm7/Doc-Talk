@@ -38,8 +38,7 @@ import DocDetails from '../Pages/DocDetails/DocDetails';
             loader: () => fetch(`/doctorsData.json`),
             Component : DocDetails,
          },
-        
     ]
-    }
+    },
   ]);
 
