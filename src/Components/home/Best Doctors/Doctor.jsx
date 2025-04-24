@@ -10,7 +10,7 @@ const Doctor = ({doctor}) => {
     <img
       src={image}
       alt="Doctor"
-      className="rounded-xl h-60" />
+      className="rounded-xl p-2 h-60" />
           <div className='flex gap-2 py-5'>
           <div className="badge badge-soft badge-accent rounded-2xl">Available</div>
           <div className="badge badge-soft badge-primary rounded-2xl">{experience}+ Experience</div>

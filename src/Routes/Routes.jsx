@@ -30,15 +30,17 @@ import DocDetails from '../Pages/DocDetails/DocDetails';
             Component: Blogs,
          },
          {
-            path:  "/contact" ,
-            Component : Contact,
-         },
-         {
             path:  "/details/:id" ,
             loader: () => fetch(`/doctorsData.json`),
             Component : DocDetails,
          },
     ]
     },
+    {
+     
+         path:  "/contact" ,
+         Component : Contact,
+   
+    }
   ]);
 

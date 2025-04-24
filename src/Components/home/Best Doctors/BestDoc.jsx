@@ -30,7 +30,7 @@ const BestDoc = () => {
         Whether it's a <br /> routine checkup or urgent consultation, book appointments in minutes and receive quality care you can trust.
       </p>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-11/12 mx-auto mt-6'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-10/12 mx-auto mt-6'>
         {loading ? (
           <div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', justifyItems:'center', marginTop: '100px' }}>
             <PacmanLoader className='text-center w-full m-20 mx-auto' color="#3681d7" size={25} />

@@ -25,7 +25,9 @@ const HomePage = () => {
                 <GlobalLoader />
             ) : (
               
-                <Outlet />
+              <div>
+                  <Outlet />
+              </div>
             )}
 
         <Footer />
