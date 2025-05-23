@@ -3,8 +3,10 @@ import { useLoaderData, useParams, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import { addToStoredDB, getStoredBook } from '../../Components/Utilities/appointment';
 import { MdErrorOutline } from "react-icons/md";
-import ErrorPage from '../ErrorPage/ErrorPage';
+
 import { FaRegRegistered } from 'react-icons/fa6';
+import ErrorPage from '../../Components/ErrorPage/ErrorPage';
+
 
 const DocDetails = () => {
   const [isBooked, setIsBooked] = useState(false);

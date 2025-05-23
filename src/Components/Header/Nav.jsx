@@ -35,7 +35,7 @@ const Nav = () => {
             </ul>
           </div>
           <a className="btn btn-ghost text-xl">
-            <img className='w-1/4' src="https://i.ibb.co.com/QFLHSKGj/logo.png" alt="Logo" />Phudu
+            <img className='w-1/4' src="https://i.ibb.co.com/QFLHSKGj/logo.png" alt="Logo" />DocTalk
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">

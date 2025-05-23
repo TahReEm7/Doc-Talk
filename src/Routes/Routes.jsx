@@ -14,7 +14,7 @@ import DocDetails from '../Pages/DocDetails/DocDetails';
     {
       path: "/",
       Component: HomePage,
-      errorElement: <Contact />,
+      errorElement : <Contact></Contact>,
       children: [
         {   index: true,
             path: "/",
@@ -36,11 +36,13 @@ import DocDetails from '../Pages/DocDetails/DocDetails';
          },
     ]
     },
-    {
-     
+    { 
          path:  "/contact" ,
          Component : Contact,
-   
+    },
+    {
+      path : "*",
+      Component : Contact,
     }
   ]);
 
