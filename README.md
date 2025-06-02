@@ -1,4 +1,5 @@
-🩺 DocTalk
+## 🩺  DocTalk
+
 DocTalk is a modern, responsive web platform that enables users to easily connect with medical professionals for online consultations, information, and appointment scheduling. Built with simplicity and accessibility in mind, DocTalk aims to bridge the gap between patients and doctors with just a few clicks.
 
 🔗 Live Site: https://doctalk-tah.surge.sh/
@@ -28,9 +29,9 @@ DocTalk is a modern, responsive web platform that enables users to easily connec
 
 ---
 
-🙋‍♂️ Author
-Tahreem Hossain
-💼 Software Engineering Student & Web Developer
+## 🙋‍♂️ Author
+-Tahreem Hossain
+-💼 Software Engineering Student & Web Developer
 
 
 
