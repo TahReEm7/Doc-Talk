@@ -29,9 +29,11 @@ DocTalk is a modern, responsive web platform that enables users to easily connec
 
 ---
 
-## 🙋‍♂️ Author
--Tahreem Hossain
--💼 Software Engineering Student & Web Developer
+## 👤 Author
+
+**Tahreem Hossain**  
+🎓 BSc in Software Engineering  
+🔗 [GitHub Profile](https://github.com/TahReEm7)
 
 
 
