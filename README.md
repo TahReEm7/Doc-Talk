@@ -1,12 +1,36 @@
-# React + Vite
+🩺 DocTalk
+DocTalk is a modern, responsive web platform that enables users to easily connect with medical professionals for online consultations, information, and appointment scheduling. Built with simplicity and accessibility in mind, DocTalk aims to bridge the gap between patients and doctors with just a few clicks.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔗 Live Site: https://doctalk-tah.surge.sh/
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🧑‍⚕️ View doctor profiles and specialties
+- 📅 Book and manage appointments
+- 💬 Chat-like interface for patient-doctor communication
+- 📈 Interactive charts for user statistics and analytics
+- 🔍 Search and filtering functionality
+- 🧭 SPA navigation with **React Router**
+- ⚡ Fast and responsive UI with **Tailwind CSS**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+| Technology     | Purpose                           |
+|----------------|-----------------------------------|
+| React          | Frontend framework                |
+| Tailwind CSS   | Styling and responsive layout     |
+| React Router   | SPA routing                       |
+| Axios          | API calls and data fetching       |
+| Chart.js       | Data visualization (e.g., stats)  |
+| Surge          | Static site hosting               |
+
+---
+
+🙋‍♂️ Author
+Tahreem Hossain
+💼 Software Engineering Student & Web Developer
+
+
+
